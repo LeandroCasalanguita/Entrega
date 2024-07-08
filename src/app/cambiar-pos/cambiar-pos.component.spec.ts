@@ -11,7 +11,7 @@ describe('CambiarPosComponent', () => {
       declarations: [CambiarPosComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(CambiarPosComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

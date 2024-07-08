@@ -1,28 +1,27 @@
-
 <div class="fondo container center">
-  <h2>Formacion: 2-3-4-1</h2>
-  <div class="row divImg">
-    <div class="col-6" *ngFor="let jugador of (equipo$ | async)?.slice(0, 2)">
-      <img class="imga" [src]="jugador.Foto" [alt]="jugador.Nombre">
-      <img src="../../assets/tachito.png" class="tachito" (click)="eliminar(jugador)"> 
+    <h2>Formacion: 2-3-4-1</h2>
+    <div class="row divImg">
+      <div class="col-6" *ngFor="let jugador of (equipo$ | async)?.slice(0, 2)">
+        <img class="imga" [src]="jugador.Foto" [alt]="jugador.Nombre">
+        <img src="../../assets/tachito.png" class="tachito" (click)="eliminar(jugador)"> 
+      </div>
+    </div>
+    <div class="row divImg">
+      <div class="col-3" *ngFor="let jugador of (equipo$ | async)?.slice(2, 5)">
+        <img class="imga" [src]="jugador.Foto" [alt]="jugador.Nombre">
+        <img src="../../assets/tachito.png" class="tachito" (click)="eliminar(jugador)" >
+      </div>
+    </div>
+    <div class="row divImg">
+      <div class="col-2 rest" *ngFor="let jugador of (equipo$ | async)?.slice(5, 9)">
+        <img class="imga" [src]="jugador.Foto" [alt]="jugador.Nombre">
+        <img src="../../assets/tachito.png" class="tachito" (click)="eliminar(jugador)" >
+      </div>
+    </div>
+    <div class="row divImg">
+      <div class="col-12 rest2" *ngFor="let jugador of (equipo$ | async)?.slice(9, 10)">
+        <img class="imga" [src]="jugador.Foto" [alt]="jugador.Nombre">
+        <img src="../../assets/tachito.png" class="tachito" (click)="eliminar(jugador)">
+      </div>
     </div>
   </div>
-  <div class="row divImg">
-    <div class="col-3" *ngFor="let jugador of (equipo$ | async)?.slice(2, 5)">
-      <img class="imga" [src]="jugador.Foto" [alt]="jugador.Nombre">
-      <img src="../../assets/tachito.png" class="tachito" (click)="eliminar(jugador)" >
-    </div>
-  </div>
-  <div class="row divImg">
-    <div class="col-2 rest" *ngFor="let jugador of (equipo$ | async)?.slice(5, 9)">
-      <img class="imga" [src]="jugador.Foto" [alt]="jugador.Nombre">
-      <img src="../../assets/tachito.png" class="tachito" (click)="eliminar(jugador)" >
-    </div>
-  </div>
-  <div class="row divImg">
-    <div class="col-12 rest2" *ngFor="let jugador of (equipo$ | async)?.slice(9, 10)">
-      <img class="imga" [src]="jugador.Foto" [alt]="jugador.Nombre">
-      <img src="../../assets/tachito.png" class="tachito" (click)="eliminar(jugador)">
-    </div>
-  </div>
-</div>

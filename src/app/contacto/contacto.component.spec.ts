@@ -11,7 +11,7 @@ describe('ContactoComponent', () => {
       declarations: [ContactoComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(ContactoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

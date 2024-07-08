@@ -17,6 +17,4 @@ export class JugadorDatoService {
     return this.http.get<Jugador[]>(URL);
   }
 
-  
-
 }

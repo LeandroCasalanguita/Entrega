@@ -11,7 +11,7 @@ describe('JugadoresComponent', () => {
       declarations: [JugadoresComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(JugadoresComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
