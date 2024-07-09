@@ -2,17 +2,21 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-}
+  }
   
-.am {
-flex: 0 1 240px;
-margin-bottom: 20px;
-}
-
-.card-img-top {
-width: 90%;
-height: 200px;
-}
-
+  .am {
+    flex: 0 1 240px;
+    margin-bottom: 20px;
+  }
+  
+  .card-img-top {
+    width: 90%;
+    height: 200px;
+  }
+  
+  .container {
+    display: flex;
+  }
+    
 
 
