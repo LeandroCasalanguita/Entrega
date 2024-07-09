@@ -10,19 +10,19 @@ export class CambiarPosComponent {
 
   @Input() Peso: number = 0;
 
-  @Output() pesoChange : EventEmitter<number> = new EventEmitter();
+  @Output() 
+  PesoChange : EventEmitter<number> = new EventEmitter<number>();
 
   constructor() {}
 
   aumentar():void {
     this.Peso++;
-    this.pesoChange.emit(this.Peso);
-    console.log(this.Peso);
+    this.PesoChange.emit(this.Peso);
   }
 
   decrementar():void {
     this.Peso--;
-    this.pesoChange.emit(this.Peso);
+    this.PesoChange.emit(this.Peso);
   }
 
 }
