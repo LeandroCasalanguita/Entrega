@@ -8,9 +8,9 @@
         <p class="card-text">Altura: {{jugador.Altura}}</p>
         <p class="card-text">Posición: {{jugador.Posicion}}</p>
         <p class="card-text">Peso: {{jugador.Peso}}</p>
-        <div class="container">
-          <a *ngIf="jugador.Peso <= 70" class="btn btn-primary" (click)="actualizarJugador(jugador)">Agregar</a> 
-          <app-cambiar-pos [(Peso)]="jugador.Peso"></app-cambiar-pos>
+        <div class="row container">
+          <a *ngIf="jugador.Peso <= 70" class="btn btn-primary col-5" (click)="actualizarJugador(jugador)">Agregar</a> 
+          <app-cambiar-pos class="col-7" [(Peso)]="jugador.Peso"></app-cambiar-pos>
         </div>
       </div>
     </div>
