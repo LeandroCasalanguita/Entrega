@@ -1,3 +1,9 @@
-<a class="btn btn-primary" click="aumentar()">Subir Peso</a>
-<!-- <input type="text" ([ngModel])="Peso"> -->
-<a class="btn btn-primary" click="decrementar()">Bajar Peso</a>
+
+<div class="container dv">
+    <a class="btn btn-primary" (click)="aumentar()">Subir Peso</a>
+
+    <input type="text" [(ngModel)]="Peso" width="60">
+
+    <a class="btn btn-primary" (click)="decrementar()">Bajar Peso</a>
+</div>
+

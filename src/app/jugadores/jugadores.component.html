@@ -6,8 +6,11 @@
         <p class="card-text">Edad:{{jugador.Edad}}</p>
         <p class="card-text">Altura:{{jugador.Altura}}</p>
         <p class="card-text">Posición:{{jugador.Posicion}}</p>
-        <a class="btn btn-primary" (click)="actualizarJugador(jugador)">Agregar</a>
-        <!-- <app-cambiar-pos ([peso])="jugador.Peso"></app-cambiar-pos> -->
+        <p class="card-text">Peso:{{jugador.Peso}}</p>
+        <div>
+          <a class="btn btn-primary" (click)="actualizarJugador(jugador)">Agregar</a> 
+          <app-cambiar-pos [Peso]="jugador.Peso"></app-cambiar-pos>
+        </div>
       </div>
     </div>
   </div>

@@ -22,4 +22,5 @@ export class JugadoresComponent implements OnInit {
   actualizarJugador(jugador: Jugador): void {
     this.equipo.agregarJugador(jugador);
   }
+
 }

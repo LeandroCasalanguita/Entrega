@@ -8,20 +8,21 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 export class CambiarPosComponent {
 
+  @Input() Peso: number = 0;
 
-  @Input() Peso:number=0 ;
-  @Output() pesoActualizado : EventEmitter<number> = new EventEmitter(); 
+  @Output() pesoChange : EventEmitter<number> = new EventEmitter();
 
-  constructor(){}
+  constructor() {}
 
-  aumentar(){
+  aumentar():void {
     this.Peso++;
-    this.pesoActualizado.emit(this.Peso);
+    this.pesoChange.emit(this.Peso);
+    console.log(this.Peso);
   }
 
-  decrementar(){
+  decrementar():void {
     this.Peso--;
-    this.pesoActualizado.emit(this.Peso);
+    this.pesoChange.emit(this.Peso);
   }
 
 }
