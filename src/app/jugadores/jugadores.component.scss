@@ -1,16 +1,18 @@
-.am{
-    display: inline-block;
-    width: 240px;
-    margin-right: 20px;
+.jugadores-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+  
+.am {
+flex: 0 1 240px;
+margin-bottom: 20px;
 }
 
 .card-img-top {
-    width: 90%;
-    height: 200px;
-    
+width: 90%;
+height: 200px;
 }
 
 
-.btn{
-    height: 50%;
-}
+

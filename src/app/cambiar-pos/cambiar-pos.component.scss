@@ -1,9 +1,12 @@
+.control-buttons {
+    display: flex;
+    margin-right: 10px;
+    height: 60px;
+}
 
-.dv input{
+.control-buttons input{
     display: block;
-    width: 100px;
+    width: 60px;
 }
-.btn{
-    display: block;
-    width: 100px;
-}
+
+
